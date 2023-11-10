@@ -24,7 +24,7 @@ import {useSearchPage} from '@docusaurus/theme-common/internal';
 import {
   DocSearchButton,
   useDocSearchKeyboardEvents,
-} from 'typesense-docsearch-react';
+} from '@gentrace/typesense-docsearch-react';
 import {useTypesenseContextualFilters} from '../../client';
 // @ts-ignore
 import Translate, {translate} from '@docusaurus/Translate';
@@ -34,11 +34,11 @@ import translations from '@theme/SearchTranslations';
 import type {
   DocSearchModal as DocSearchModalType,
   DocSearchModalProps,
-} from 'typesense-docsearch-react';
+} from '@gentrace/typesense-docsearch-react';
 import type {
   InternalDocSearchHit,
   StoredDocSearchHit,
-} from 'typesense-docsearch-react/dist/esm/types';
+} from '@gentrace/typesense-docsearch-react/dist/esm/types';
 import type {AutocompleteState} from '@algolia/autocomplete-core';
 
 type DocSearchProps = Omit<
@@ -127,11 +127,11 @@ function DocSearch({
 
     return Promise.all([
       // @ts-ignore
-      import('typesense-docsearch-react/modal') as Promise<
-        typeof import('typesense-docsearch-react')
+      import('@gentrace/typesense-docsearch-react/modal') as Promise<
+        typeof import('@gentrace/typesense-docsearch-react')
       >,
       // @ts-ignore
-      import('typesense-docsearch-react/style'),
+      import('@gentrace/typesense-docsearch-react/style'),
       // @ts-ignore
       import('./styles.css'),
     ]).then(([{DocSearchModal: Modal}]) => {

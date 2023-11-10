@@ -7,7 +7,7 @@
 
 import {translate} from '@docusaurus/Translate';
 
-import type {DocSearchTranslations} from 'typesense-docsearch-react';
+import type {DocSearchTranslations} from '@gentrace/typesense-docsearch-react';
 
 const translations: DocSearchTranslations & {placeholder: string} = {
   button: {
