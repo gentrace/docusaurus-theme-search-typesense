@@ -130,11 +130,6 @@ const translations: DocSearchTranslations & {placeholder: string} = {
         description:
           'The ARIA label for the Escape key button that close the modal',
       }),
-      searchByText: translate({
-        id: 'theme.SearchModal.footer.searchByText',
-        message: 'Search by',
-        description: 'The text explain that the search is making by Algolia',
-      }),
     },
     noResultsScreen: {
       noResultsText: translate({
