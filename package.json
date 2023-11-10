@@ -50,6 +50,7 @@
     "@types/fs-extra": "^9.0.13",
     "@types/lodash": "^4.14.182",
     "@types/react-dom": "^18.0.6",
+    "prettier": "^3.0.3",
     "typescript": "^4.7.4"
   },
   "peerDependencies": {
